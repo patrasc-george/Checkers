@@ -1,1 +1,13 @@
 # Checkers
+
+The Checkers Game project involves developing a Unity-based game where players can engage in the classic game of checkers. The project includes functionalities for generating the game board, placing and moving pieces, handling player interactions, and updating game states and scores. The game aims to provide an interactive and engaging experience for players through its well-structured design and intuitive gameplay mechanics.
+
+The BoardGenerator.cs script is central to the project, responsible for setting up the game board and placing pieces in their initial positions. The script initializes an 8x8 board with alternating black and white squares, creating a visually appealing and standard checkers board. Various game objects such as white and black squares, pawns, rooks, knights, bishops, queens, and kings are instantiated and placed on the board. The Tile and Piece classes within the script manage the properties and behaviors of each tile and piece, respectively. Pieces like pawns, rooks, knights, bishops, queens, and kings inherit from the abstract Piece class and override the Move method to define their specific movement logic.
+
+The script also handles user interactions by detecting mouse clicks and determining whether a piece or a square was clicked. When a piece is selected, it highlights the piece and plays a selection sound to provide feedback to the player. The script ensures that the selected piece can move to valid tiles on the board, updating the piece's position and the game state accordingly.
+
+To enhance the gameplay experience, the script includes score tracking and display functionalities. The blackScore and whiteScore variables keep track of the scores for the black and white players, respectively. These scores are displayed using TextMeshProUGUI elements, providing real-time feedback to the players about their progress in the game.
+
+Additionally, the script incorporates various Unity-specific features such as raycasting to detect clicks on game objects, instantiating game objects for visual effects, and using audio sources to play sounds. These features contribute to a polished and immersive gaming experience.
+
+Overall, the Checkers Game project leverages Unity's capabilities to create a functional and engaging checkers game. The well-organized code structure and thoughtful implementation of game mechanics ensure that players can enjoy a smooth and interactive gameplay experience. The project's modular design allows for easy modifications and extensions, making it a robust foundation for further development and enhancements.
